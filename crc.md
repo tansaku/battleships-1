@@ -1,10 +1,10 @@
 1. Player
 
 Responsibilities:
+
 - Should have 5 ships
 - Should place 5 ships on home grid. 
 - Should call out shots on tracking grid.
-<!-- - Can sink opponent's ships -->
  
 Collaborators:
 
@@ -12,12 +12,13 @@ Collaborators:
 - HomeGrid
 - TrackingGrid
 
+
 2. Grid
 
 Responsibilities: 
 
 - Stores ships in specific locations
-- Declare hits and misses for all locations
+- Declare hits, misses and sinks for all locations
 - Can hide ships
 
 2.a. TrackingGrid < Grid
@@ -26,20 +27,19 @@ Responsibilities:
 
 - Hides opponent's ship location
 
-
 2.b. HomeGrid < Grid
 
 Responsibilities:
 
 - Know user's ship location
 
-Collaborators:
+2+a+b. Collaborators:
 
 - ship
 - player
 
 
-4. Ship
+3. Ship
 
 Responsibilities: 
 
@@ -53,9 +53,8 @@ Collaborators:
 - grid
 - player
 
-
  
-5. Game
+4. Game
 
 Responsibilities: 
 
@@ -66,10 +65,10 @@ Responsibilities:
 - Reports victory
 - Is finished when one player wins.
 - Allows turns. If player hits, gets another go.
-- 
-
 
 Collaborators:
 
-
+- ship
+- grid (tracking grid and home grid)
+- player
 
