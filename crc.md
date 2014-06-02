@@ -4,6 +4,7 @@ Responsibilities:
 - Should have 10 ships
 - Should place 5 ships on home grid. 
 - Should call out shots on tracking grid.
+- Can sink opponent's ships
  
 Collaborators:
 
@@ -19,32 +20,21 @@ Responsibilities:
 - Stores ships
 - Declare hits, misses or sinks
 
-<!-- Collaborators:
-
--  -->
-
 2.a. TrackingGrid < Grid
 
 Responsibilities:
 
 - Does not declare opponent's ship location when initialised
-- Updates user's hits
-- Updates user's misses
-- Updates user's sinks
+- Declares h/m/s by user
 
-
-Collaborators : none (?)
 
 2.b. HomeGrid < Grid
 
 Responsibilities:
 
 - Declares user's ship location
-- Updates opponent's hits
-- Updates opponent's misses
-- Updates opponent's sinks
+- Declares h/m/s by opponent
 
-Collaborators:
 
 4. Ship
 
