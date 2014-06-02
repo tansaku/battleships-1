@@ -4,11 +4,15 @@ Battleships Description
 
 - Each player has two 10x10 grids: tracking-grid and home-grid.
 
-- 1x2 2x3 1x4 1x5
+- 1 ship x length 2 units 
+- 2 ships x length 3 units 
+- 1 ship x length 4 units
+- 1 ship x length 5 units
 
 - Each player places 10 ships, of various length, on their home grid. 
 
 - The tracking grid is used for recording the shots you've taken.
+- Can't hit same spot more than once
 
 - Ships can't touch
 
