@@ -7,11 +7,15 @@ describe Player do
 		expect(player.ship_count).to eq 5
 	end
 
-	it "should place 5 ships on home grid" do 
-		grid = double :grid
-		ship = double :ship
-		player.place ship 
-		
+	it "should assign a ship a location" do 
+		ship = double :ship, :location= => nil
+		player.place ship,:A1
+		expect(ship.location = :A1).to be_true
 	end
 
+	it "has one fewer ships after placing a ship" do
+		ship = double :ship, :location= => nil
+		player.place ship,:A1
+		expect(player.ship_count).to eq 4
+	end
 end
