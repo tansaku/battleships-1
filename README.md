@@ -4,7 +4,7 @@ Battleships Description
 
 - Each player has two 10x10 grids: tracking-grid and home-grid.
 
-- 3x2 3x3 2x4 1x5 1x6
+- 1x2 2x3 1x4 1x5
 
 - Each player places 10 ships, of various length, on their home grid. 
 
@@ -16,11 +16,13 @@ Battleships Description
 
 - If hit, you get to go again
 
-- A player has to declare if his ship is hit, missed, or sunk.
+- the board declares if ship is hit, missed, or sunk. -->
 
 - A miss is marked with a 0 on the tracking grid. A hit is marked with a 1 on the tracking grid.
 
 - If a ship is hit in all its cells, it is sunk.
+
+- You cannot cheat.
 
 - First player to sink opponent's fleet wins. Game finishes.
 
