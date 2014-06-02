@@ -2,6 +2,7 @@
 
 Responsibilities:
 
+- Should have a tracking grid and a home grid
 - Should have 5 ships
 - Should place 5 ships on home grid. 
 - Should call out shots on tracking grid.

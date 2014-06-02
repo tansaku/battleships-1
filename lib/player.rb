@@ -1,8 +1,10 @@
 class Player
 
-	attr_accessor :ship_count
+	attr_accessor :ship_count, :tracking_grid, :home_grid
 
-	def initialize
+	def initialize(tracking_grid, home_grid)
+		@tracking_grid = tracking_grid
+		@home_grid = home_grid
 		@ship_count = 5
 	end
 
@@ -14,5 +16,9 @@ class Player
 		ship.location = coordinate
 		self.ship_count -= 1
 	end
+
+	# def target(coordinate)
+
+	# end
 
 end
