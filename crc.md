@@ -6,6 +6,8 @@ Responsibilities:
 - Should have 5 ships
 - Should assign those 5 ships co-ordinates. 
 - Should call out shots on co-ordinates.
+- Has to assign coordinates according to the ship's length
+- For each ship, can only assign adjacent coordinates.
  
 Collaborators:
 
@@ -63,7 +65,7 @@ Collaborators:
 Responsibilities: 
 
 - Have certain lengths. 
-- has a fully define location
+- Has a fully defined location
 - Reports hits
 - Reports sinking
 

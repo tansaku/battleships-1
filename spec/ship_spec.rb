@@ -4,23 +4,38 @@ describe Ship do
 	let(:ship) {Ship.new(3) }
 
 
-	it "has a set length" do 
-		expect(ship.length).to eq 3
+	context "when initialized" do 
+
+		it "has a set length" do 
+			expect(ship.length).to eq 3
+		end
+
+		it "is not hit" do
+			B1 = double :B1, targeted?: false
+			ship.locations << B1
+			expect(ship.hit_locations).to be_empty
+		end
+
+		it "is horizontal by default" do 
+			expect(ship.horizontal?).to be_true
+		end
+
 	end
 
-	it "when initialized, is not hit" do
-		B1 = double :B1, targeted?: false
-		ship.locations << B1
-		expect(ship.hit_locations).to be_empty
+	context "when placed by player" do 
+
+		it "has a start location" do
+			player = double :player, place_ship: ship.locations << :A1 
+			player.place_ship
+			expect(ship.locations).to eq [:A1]
+		end
+
+		it "can be placed vertically" do
+			# player = double :player, place_vertically: 
+			ship.place_vertically!
+			expect(ship).not_to be_horizontal
+		end
 	end
-
-
-	it 'has a start location after player being placed' do
-		player = double :player, place_ship: ship.locations << :A1 
-		player.place_ship
-		expect(ship.locations).to eq [:A1]
-	end
-
 	context "knows" do 
 
 		before {A1 = double :A1, targeted?: true}

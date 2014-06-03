@@ -4,6 +4,16 @@ class Ship
 
 	def initialize(length)
 		@length = length
+		@horizontal = true
+	end
+
+	def horizontal?
+		@horizontal
+	end
+
+	def place_vertically!
+		@horizontal = false
+		self
 	end
 
 	def locations
