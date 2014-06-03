@@ -62,18 +62,18 @@ Collaborators:
 
 Responsibilities: 
 
-- Have a location in terms of coordinates
-- Have certain lengths
+- Have certain lengths. 
+- has a fully define location
 - Reports hits
 - Reports sinking
 
 Collaborators:
 
-- grid
+- coordinates
 - player
 
  
-4. Game
+<!-- 4. Game
 
 Responsibilities: 
 
@@ -89,5 +89,5 @@ Collaborators:
 
 - ship
 - grid (tracking grid and home grid)
-- player
+- player -->
 
