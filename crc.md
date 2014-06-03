@@ -2,19 +2,24 @@
 
 Responsibilities:
 
-- Should have a tracking grid and a home grid
+<!-- - Should have a tracking grid and a home grid -->
 - Should have 5 ships
-- Should place 5 ships on home grid. 
-- Should call out shots on tracking grid.
+- Should assign those 5 ships co-ordinates. 
+- Should call out shots on co-ordinates.
  
 Collaborators:
 
 - Ship
-- HomeGrid
-- TrackingGrid
+- Coordinates
+
+#HomeGrid
+#TrackingGrid
 
 
-2. Grid
+
+
+
+<!-- 2. Grid
 
 Responsibilities: 
 
@@ -38,6 +43,19 @@ Responsibilities:
 
 - ship
 - player
+ -->
+
+2. Co-ordinates
+
+Responsibilities: 
+
+- Have a latitude and a longitude
+- Knows when a co-ordinate has been targeted
+
+Collaborators:
+
+- Player
+- Ship
 
 
 3. Ship
