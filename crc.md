@@ -62,10 +62,10 @@ Collaborators:
 
 Responsibilities: 
 
-- Occupy location on grid.
+- Have a location in terms of coordinates
 - Have certain lengths
-- Hit?
-- Sunk?
+- Reports hits
+- Reports sinking
 
 Collaborators:
 
