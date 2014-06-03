@@ -31,4 +31,15 @@ Battleships Description
 - First player to sink opponent's fleet wins. Game finishes.
 
 
+-------
+
+Ship pseudo-code
+
+- locations 
+{ A1: :ship, A2: :ship, A3: :hit}
+
+- hit
+locations.each {|location, status| status = :hit if location.targeted?}
+
+
 
