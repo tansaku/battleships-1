@@ -53,6 +53,7 @@ Responsibilities:
 
 - Have a latitude and a longitude
 - Knows when a co-ordinate has been targeted
+- Knows misses
 
 Collaborators:
 
