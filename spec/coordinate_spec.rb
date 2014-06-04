@@ -2,6 +2,7 @@ require 'coordinate'
 
 describe Coordinate do 
 	let(:coordinate) {Coordinate.new("a","1")}
+	let(:ship) {Ship.new}
 
 	it "is untargeted when initialized" do 
 		expect(coordinate.targeted?).to be_false
@@ -18,7 +19,19 @@ describe Coordinate do
 		expect(coordinate.column).to eq 1
 	end
 
-	it "knows when it's been targeted" do 
+	it "can pass in numbers when initialized" do
+		coordinate = Coordinate.new(1,2) 
+		expect(coordinate.row).to eq 1
+		expect(coordinate.column).to eq 2
+	end
+
+	it "can have a ship" do
+		coordinate.hold("A1")
+		expect(ship.locations).to include? [A1]
+
+	end
+
+	xit "knows when it's been targeted" do 
 		player = double :player, target_coordinate: coordinate.targeted = true
 		expect {player.target_coordinate}.to change{coordinate.targeted?}.from(false).to(true)
 	end
